@@ -2,8 +2,8 @@
 
 import unittest
 import datetime
-import util
-import test_data
+from . import util
+from . import test_data
 
 
 class UtilTest(unittest.TestCase) :

@@ -6,3 +6,4 @@ acc_bot/po/ru/LC_MESSAGES/bot.mo
 acc_bot/po/en/LC_MESSAGES/bot.mo
 acc_bot/docs/build
 acc_bot/docs/.DS_Store
+Pipfile.lock

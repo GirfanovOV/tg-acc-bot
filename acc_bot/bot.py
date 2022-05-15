@@ -22,14 +22,14 @@ from telegram.ext import (
     CommandHandler,
     CallbackContext,
 )
-from util import (
+from .util import (
     accumulate_by_span,
     check_limit,
     gater_week,
     make_spending_prediction,
     make_pie
 )
-from test_data import load_test_data_1, load_test_data_2
+from .test_data import load_test_data_1, load_test_data_2
 
 try :
     translation = gettext.translation('bot', 'po')
@@ -37,6 +37,8 @@ try :
     ngettext = translation.ngettext
 except : # pylint: disable=bare-except
     _ = lambda x : x
+    def ngettext(*args) :
+        return args[0]
 
 CATEGORIES = [
     [_('restaurants'), _('transport')],
