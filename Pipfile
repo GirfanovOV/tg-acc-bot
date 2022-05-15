@@ -5,9 +5,14 @@ name = "pypi"
 
 [packages]
 python-telegram-bot = "*"
+numpy = "*"
 
 [dev-packages]
 build = "*"
+coverage = "*"
+sphinx = "*"
+pybabel = "*"
+doit = "*"
 
 [requires]
 python_version = "3.9"

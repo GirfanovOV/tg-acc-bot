@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Simple Bot to reply to Telegram messages.
 
@@ -7,6 +6,7 @@ the Application and registered at their respective places.
 Then, the bot is started and runs until we press Ctrl-C on the command line.
 """
 
+import sys
 import os
 import datetime
 import gettext
@@ -22,14 +22,20 @@ from telegram.ext import (
     CommandHandler,
     CallbackContext,
 )
-from .util import (
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+
+
+from acc_bot.util import (
     accumulate_by_span,
     check_limit,
     gater_week,
     make_spending_prediction,
     make_pie
 )
-from .test_data import load_test_data_1, load_test_data_2
+from acc_bot.test_data import load_test_data_1, load_test_data_2
 
 try :
     translation = gettext.translation('bot', 'po')
