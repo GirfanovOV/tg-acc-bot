@@ -1,0 +1,167 @@
+# Translations template for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-05-15 19:13+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: bot.py:41 bot.py:46
+msgid "restaurants"
+msgstr ""
+
+#: bot.py:41 bot.py:46
+msgid "transport"
+msgstr ""
+
+#: bot.py:42 bot.py:46
+msgid "supermarkets"
+msgstr ""
+
+#: bot.py:42 bot.py:47
+msgid "pharmacy"
+msgstr ""
+
+#: bot.py:43 bot.py:47
+msgid "entertainment"
+msgstr ""
+
+#: bot.py:43 bot.py:47
+msgid "other"
+msgstr ""
+
+#: bot.py:52
+msgid "Sorry, I dont understand."
+msgstr ""
+
+#: bot.py:53
+msgid "I dont understand🧐"
+msgstr ""
+
+#: bot.py:54
+msgid "I dont understand!🤬"
+msgstr ""
+
+#: bot.py:55
+msgid "STOP!✋"
+msgstr ""
+
+#: bot.py:73
+msgid ""
+"Hey! Im an accountant bot.\n"
+"Ill help u managing ur finances!"
+msgstr ""
+
+#: bot.py:80
+msgid "Unknown cmd 🥵"
+msgstr ""
+
+#: bot.py:95 bot.py:124 bot.py:149
+msgid "Wrong input"
+msgstr ""
+
+#: bot.py:104 bot.py:114
+msgid "Please, choose category:"
+msgstr ""
+
+#: bot.py:132
+msgid "Type new limit"
+msgstr ""
+
+#: bot.py:135
+msgid "Type the amount spent"
+msgstr ""
+
+#: bot.py:161
+msgid "Category {} was updated!"
+msgstr ""
+
+#: bot.py:166
+msgid ""
+"\n"
+"Youve exceeded your weekly limit for the category {} 😱"
+msgstr ""
+
+#: bot.py:168
+msgid ""
+"\n"
+"Youve already spent {} of you limit {} for this week"
+msgstr ""
+
+#: bot.py:173
+msgid "Limit for {} category was updated!"
+msgstr ""
+
+#: bot.py:184 bot.py:193 bot.py:210
+msgid "You havent spent any money this week 😢"
+msgstr ""
+
+#: bot.py:196
+msgid ""
+"Wow!🤩 Heres your top spenings of this week:\n"
+"\n"
+msgstr ""
+
+#: bot.py:199
+msgid ""
+"\n"
+"And the total is: {} moneys!💸"
+msgstr ""
+
+#: bot.py:201
+msgid ""
+"\n"
+"Only {} category present"
+msgid_plural ""
+"\n"
+"{} categories present!"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bot.py:216
+msgid "Too few data 😔"
+msgstr ""
+
+#: bot.py:219
+msgid ""
+"Your week totals:\n"
+"\n"
+msgstr ""
+
+#: bot.py:223
+msgid ""
+"\n"
+"By the way, we predict you to spend {} next week!"
+msgstr ""
+
+#: bot.py:237
+msgid "This is a help message\n"
+msgstr ""
+
+#: bot.py:238
+msgid "/add - add spending for specific category.\n"
+msgstr ""
+
+#: bot.py:239
+msgid "/set_limit - set the limit for the category.\n"
+msgstr ""
+
+#: bot.py:240
+msgid "/week show stats for the last week.\n"
+msgstr ""
+
+#: bot.py:241
+msgid "/weeks show accumulated stats for the whole history."
+msgstr ""
+
