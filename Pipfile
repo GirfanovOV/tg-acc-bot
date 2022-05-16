@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 python-telegram-bot = "*"
 numpy = "*"
+matplotlib = "*"
+seaborn = "*"
 
 [dev-packages]
 build = "*"

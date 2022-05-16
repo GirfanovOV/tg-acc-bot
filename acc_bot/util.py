@@ -1,11 +1,9 @@
 """Module implements a number of tools used all across the project."""
 
 
+import os
 import datetime
-import subprocess
 import numpy as np
-# import matplotlib.pyplot as plt
-# import seaborn as sns
 
 
 def accumulate_by_span(data: dict, span: datetime.timedelta) -> list:
@@ -57,15 +55,12 @@ def make_pie(data: dict) -> None:
     """Plot pie chart of weekly spendings."""
     res = gater_week(data)
     data, labels = [*res.values()], [*res.keys()]
-    # colors = sns.color_palette('pastel')[0:5]
-    # plt.pie(data, labels = labels, colors = colors, autopct='%.0f%%')
-    # plt.savefig('tmp.png')
-    cmd = ["python"]
-    cmd.append("-c")
-    cmd.append("\"import matplotlib.pyplot as plt\n import seaborn as sns\n")
-    cmd[-1] += "colors = sns.color_palette('pastel')[0:5]\n"
-    cmd[-1] += f"data = {data}\n"
-    cmd[-1] += f"labels = {labels}\n"
-    cmd[-1] += "plt.pie(data, labels = labels, colors = colors, autopct='%.0f%%')\n"
-    cmd[-1] += "plt.savefig('tmp.png')\""
-    subprocess.run(cmd, check=True)
+    os.system('echo "import matplotlib.pyplot as plt" >> tmp.py')
+    os.system('echo "import seaborn as sns" >> tmp.py')
+    os.system('echo ' + f'"data = {data}" >> tmp.py')
+    os.system('echo ' + f'"labels = {labels}" >> tmp.py')
+    os.system('echo "colors = sns.color_palette(\'pastel\')[0:len(data)]" >> tmp.py')
+    os.system('echo "plt.pie(data, labels = labels, colors = colors,  autopct=\'%.0f%%\')" >> tmp.py')
+    os.system('echo "plt.savefig(\'tmp.png\')" >> tmp.py')
+    os.system('python tmp.py')
+    os.remove('tmp.py')

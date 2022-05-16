@@ -10,7 +10,8 @@ import sys
 import os
 import datetime
 import gettext
-import time
+import locale
+
 from telegram import (
     Update,
     ReplyKeyboardMarkup
@@ -230,7 +231,6 @@ def weeks(update: Update, context: CallbackContext) -> None:
 def chart(update: Update, context: CallbackContext) -> None:
     """Plot a pie char with weekly spendings."""
     make_pie(context.user_data['data'])
-    time.sleep(1)
     with open('tmp.png', 'rb') as photo:
         update.message.reply_photo(photo=photo)
     os.remove('tmp.png')
@@ -263,8 +263,13 @@ def load_test_2(update: Update, context: CallbackContext) -> None:
 
 def main():
     """Call main application."""
-    updater = Updater(token='5337419761:AAFahgNMGQNpzyRvFFlS3_N_-9DyfNB5bfQ', use_context=True)
+    locale.setlocale(locale.LC_ALL, locale.getdefaultlocale())
+
+    token = input(_("Please, provide telegram-bot token or left blank to use default:\n"))
+    default_token = '5337419761:AAFahgNMGQNpzyRvFFlS3_N_-9DyfNB5bfQ'
+    updater = Updater(token=token if token else default_token, use_context=True)
     dispatcher = updater.dispatcher
+    print(_('The bot is ready!'))
 
     dispatcher.add_handler(CommandHandler('start', start))
     dispatcher.add_handler(CommandHandler('add', add))

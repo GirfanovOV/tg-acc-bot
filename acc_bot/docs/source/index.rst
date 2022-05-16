@@ -47,6 +47,21 @@ Commands for testing:
  - ``/load_test_1`` - loads specially prepared data about 100 spendings for the last week.
  - ``/load_test_2`` - loads specially prepared data about 1000 spending evenly distributed over 8 weeks.
 
+Testing of functional elements:
+
+ - ``doit`` utility:
+    - ``doit test`` - to run the test module.
+    - ``doit coverage`` - to generate test coverage.
+
+Assembly :
+
+ - ``doit html`` - build sphinx documentation.
+ - ``doit check`` - check pydocstyle, flake8 and tests.
+ - ``doit wheel`` - build the wheel module.
+ - ``doit sdist`` - build sources.
+
+ Installation : ``pip install acc_bot``
+
 Indices and tables
 ==================
 

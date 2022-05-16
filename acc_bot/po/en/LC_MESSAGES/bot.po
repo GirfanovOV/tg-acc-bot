@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-16 13:39+0300\n"
+"POT-Creation-Date: 2022-05-16 15:03+0300\n"
 "PO-Revision-Date: 2022-05-15 13:36+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -166,6 +166,17 @@ msgstr ""
 msgid "/weeks show accumulated stats for the whole history."
 msgstr ""
 
+#: acc_bot/bot.py:269
+msgid "Please, provide telegram-bot token or left blank to use default:\n"
+msgstr ""
+
+#: acc_bot/bot.py:273
+msgid "The bot is ready!"
+msgstr ""
+
 #~ msgid "By the way, we predict you to spend {} next week!"
+#~ msgstr ""
+
+#~ msgid "Please, provide telegram-bot token or left blank to use default."
 #~ msgstr ""
 
