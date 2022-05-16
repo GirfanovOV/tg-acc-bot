@@ -37,14 +37,17 @@ from acc_bot.util import (
 )
 from acc_bot.test_data import load_test_data_1, load_test_data_2
 
-try :
-    translation = gettext.translation('bot', 'po')
-    _ = translation.gettext
-    ngettext = translation.ngettext
-except : # pylint: disable=bare-except
-    _ = lambda x : x
-    def ngettext(*args) :
-        return args[0]
+translation = gettext.translation('bot', 'acc_bot/po/')
+_ = translation.gettext
+ngettext = translation.ngettext
+# try :
+#     translation = gettext.translation('bot', 'acc_bot/')
+#     _ = translation.gettext
+#     ngettext = translation.ngettext
+# except : # pylint: disable=bare-except
+#     _ = lambda x : x
+#     def ngettext(*args) :
+#         return args[0]
 
 CATEGORIES = [
     [_('restaurants'), _('transport')],

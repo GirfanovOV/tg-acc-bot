@@ -10,3 +10,11 @@ Pipfile.lock
 acc_bot/_build
 .coverage
 .doit.db
+dist
+acc_bot.egg-info
+_build
+htmlcov
+acc_bot/ru
+acc_bot/en
+*.mo
+*.pot

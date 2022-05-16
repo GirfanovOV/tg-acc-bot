@@ -8,118 +8,118 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-15 19:13+0300\n"
+"POT-Creation-Date: 2022-05-16 12:14+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.1\n"
 
-#: bot.py:41 bot.py:46
+#: acc_bot/bot.py:53 acc_bot/bot.py:58 acc_bot/test_data.py:22
 msgid "restaurants"
 msgstr ""
 
-#: bot.py:41 bot.py:46
+#: acc_bot/bot.py:53 acc_bot/bot.py:58 acc_bot/test_data.py:22
 msgid "transport"
 msgstr ""
 
-#: bot.py:42 bot.py:46
+#: acc_bot/bot.py:54 acc_bot/bot.py:58 acc_bot/test_data.py:22
 msgid "supermarkets"
 msgstr ""
 
-#: bot.py:42 bot.py:47
+#: acc_bot/bot.py:54 acc_bot/bot.py:59 acc_bot/test_data.py:23
 msgid "pharmacy"
 msgstr ""
 
-#: bot.py:43 bot.py:47
+#: acc_bot/bot.py:55 acc_bot/bot.py:59 acc_bot/test_data.py:23
 msgid "entertainment"
 msgstr ""
 
-#: bot.py:43 bot.py:47
+#: acc_bot/bot.py:55 acc_bot/bot.py:59 acc_bot/test_data.py:23
 msgid "other"
 msgstr ""
 
-#: bot.py:52
+#: acc_bot/bot.py:64
 msgid "Sorry, I dont understand."
 msgstr ""
 
-#: bot.py:53
+#: acc_bot/bot.py:65
 msgid "I dont understand🧐"
 msgstr ""
 
-#: bot.py:54
+#: acc_bot/bot.py:66
 msgid "I dont understand!🤬"
 msgstr ""
 
-#: bot.py:55
+#: acc_bot/bot.py:67
 msgid "STOP!✋"
 msgstr ""
 
-#: bot.py:73
+#: acc_bot/bot.py:85
 msgid ""
 "Hey! Im an accountant bot.\n"
 "Ill help u managing ur finances!"
 msgstr ""
 
-#: bot.py:80
+#: acc_bot/bot.py:92
 msgid "Unknown cmd 🥵"
 msgstr ""
 
-#: bot.py:95 bot.py:124 bot.py:149
+#: acc_bot/bot.py:107 acc_bot/bot.py:136 acc_bot/bot.py:161
 msgid "Wrong input"
 msgstr ""
 
-#: bot.py:104 bot.py:114
+#: acc_bot/bot.py:116 acc_bot/bot.py:126
 msgid "Please, choose category:"
 msgstr ""
 
-#: bot.py:132
+#: acc_bot/bot.py:144
 msgid "Type new limit"
 msgstr ""
 
-#: bot.py:135
+#: acc_bot/bot.py:147
 msgid "Type the amount spent"
 msgstr ""
 
-#: bot.py:161
+#: acc_bot/bot.py:173
 msgid "Category {} was updated!"
 msgstr ""
 
-#: bot.py:166
+#: acc_bot/bot.py:178
 msgid ""
 "\n"
 "Youve exceeded your weekly limit for the category {} 😱"
 msgstr ""
 
-#: bot.py:168
+#: acc_bot/bot.py:180
 msgid ""
 "\n"
 "Youve already spent {} of you limit {} for this week"
 msgstr ""
 
-#: bot.py:173
+#: acc_bot/bot.py:185
 msgid "Limit for {} category was updated!"
 msgstr ""
 
-#: bot.py:184 bot.py:193 bot.py:210
+#: acc_bot/bot.py:196 acc_bot/bot.py:205 acc_bot/bot.py:222
 msgid "You havent spent any money this week 😢"
 msgstr ""
 
-#: bot.py:196
+#: acc_bot/bot.py:208
 msgid ""
 "Wow!🤩 Heres your top spenings of this week:\n"
 "\n"
 msgstr ""
 
-#: bot.py:199
+#: acc_bot/bot.py:211
 msgid ""
 "\n"
 "And the total is: {} moneys!💸"
 msgstr ""
 
-#: bot.py:201
+#: acc_bot/bot.py:213
 msgid ""
 "\n"
 "Only {} category present"
@@ -129,39 +129,39 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: bot.py:216
+#: acc_bot/bot.py:228
 msgid "Too few data 😔"
 msgstr ""
 
-#: bot.py:219
+#: acc_bot/bot.py:231
 msgid ""
 "Your week totals:\n"
 "\n"
 msgstr ""
 
-#: bot.py:223
+#: acc_bot/bot.py:235
 msgid ""
 "\n"
 "By the way, we predict you to spend {} next week!"
 msgstr ""
 
-#: bot.py:237
+#: acc_bot/bot.py:251
 msgid "This is a help message\n"
 msgstr ""
 
-#: bot.py:238
+#: acc_bot/bot.py:252
 msgid "/add - add spending for specific category.\n"
 msgstr ""
 
-#: bot.py:239
+#: acc_bot/bot.py:253
 msgid "/set_limit - set the limit for the category.\n"
 msgstr ""
 
-#: bot.py:240
+#: acc_bot/bot.py:254
 msgid "/week show stats for the last week.\n"
 msgstr ""
 
-#: bot.py:241
+#: acc_bot/bot.py:255
 msgid "/weeks show accumulated stats for the whole history."
 msgstr ""
 
