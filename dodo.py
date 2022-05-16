@@ -6,7 +6,7 @@ import glob
 from doit.tools import create_folder
 
 
-def task_html() :
+def task_html():
     """Make HTML doumentation."""
     return {
         'actions' : ['sphinx-build acc_bot/docs/source _build'],
@@ -14,13 +14,14 @@ def task_html() :
         'targets' : ['_build/index.html']
     }
 
+
 def task_test():
     """Preform tests."""
     yield {'actions': ['coverage run -m unittest -v'], 'name': "run"}
     yield {'actions': ['coverage report'], 'verbosity': 2, 'name': "report"}
 
 
-def task_coverage() :
+def task_coverage():
     """Produce HTML coverage table"""
     return {
         'actions' : ['coverage html'],
@@ -63,8 +64,6 @@ def task_mo():
            }
 
 
-
-
 def task_sdist():
     """Create source distribution."""
     return {
@@ -84,33 +83,10 @@ def task_wheel():
 def task_app():
     """Run application."""
     return {
-            'actions': ['python -m AppBase'],
+            'actions': ['LC_ALL=ru python -m acc_bot'],
             'task_dep': ['mo'],
            }
 
-
-
-
-
-# def task_gen_locale() :
-#     """Generate translation."""
-#     return {
-#         'actions' : [
-#             'pybabel compile -D bot -d acc_bot/po -l en',
-#             'pybabel compile -D bot -d acc_bot/po -l ru'
-#         ],
-#         'targets' : [
-#             'acc_bot/po/ru/LC_MESSAGES/bot.po',
-#             'acc_bot/po/en/LC_MESSAGES/bot.po'
-#         ]
-#     }
-
-# def task_build_whl() :
-#     """Generate distributable"""
-#     return {
-#         'actions' : ['python -m build'],
-#         'task_dep' : ['gen_locale']
-#     }
 
 def task_gitclean():
     """Clean all generated files not tracked by GIT."""

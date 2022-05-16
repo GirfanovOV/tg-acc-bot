@@ -2,18 +2,12 @@
 Test data loaders. The module uses random data generator
 with fixed state for reproducible tests.
 """
-
+import os
 import datetime
 import random
 import gettext
 
 gettext.install("bot", os.path.dirname(__file__), names=("ngettext",))
-# try :
-#     translation = gettext.translation('bot', 'po')
-#     _ = translation.gettext
-#     ngettext = translation.ngettext
-# except : # pylint: disable=bare-except
-#     _ = lambda x : x
 
 random.seed(a=42)
 fix_state = random.getstate()

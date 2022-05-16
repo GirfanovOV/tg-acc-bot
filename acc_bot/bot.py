@@ -28,30 +28,16 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 
-from acc_bot.util import (
+from acc_bot.util import (  # noqa: E402
     accumulate_by_span,
     check_limit,
     gater_week,
     make_spending_prediction,
     make_pie
 )
-from acc_bot.test_data import load_test_data_1, load_test_data_2
-
-_ = lambda x : x
+from acc_bot.test_data import load_test_data_1, load_test_data_2  # noqa: E402
 
 gettext.install("bot", os.path.dirname(__file__), names=("ngettext",))
-
-# translation = gettext.translation('bot', 'acc_bot/po/')
-# _ = translation.gettext
-# ngettext = translation.ngettext
-# try :
-#     translation = gettext.translation('bot', 'acc_bot/')
-#     _ = translation.gettext
-#     ngettext = translation.ngettext
-# except : # pylint: disable=bare-except
-#     _ = lambda x : x
-#     def ngettext(*args) :
-#         return args[0]
 
 CATEGORIES = [
     [_('restaurants'), _('transport')],
@@ -196,7 +182,7 @@ def week(update: Update, context: CallbackContext) -> None:
     """Show the user spendings for the last week."""
     reset_context(context.user_data)
 
-    if 'data' not in context.user_data or len(context.user_data['data']) == 0 :
+    if 'data' not in context.user_data or len(context.user_data['data']) == 0:
         update.message.reply_text(_('You havent spent any money this week 😢'))
         return
 
@@ -214,7 +200,7 @@ def week(update: Update, context: CallbackContext) -> None:
         res_msg += f'{num+1}. {item[0]}: {item[1]}\n'
     res_msg += _('\nAnd the total is: {} moneys!💸').format(total)
     res_msg += ngettext('\nOnly {} category present',
-     '\n{} categories present!', len(week_spendings)).format(len(week_spendings))
+                        '\n{} categories present!', len(week_spendings)).format(len(week_spendings))
     update.message.reply_text(res_msg)
 
 
@@ -240,11 +226,12 @@ def weeks(update: Update, context: CallbackContext) -> None:
         make_spending_prediction(context.user_data['data']))
     update.message.reply_text(res_msg[:-1])
 
+
 def chart(update: Update, context: CallbackContext) -> None:
     """Plot a pie char with weekly spendings."""
     make_pie(context.user_data['data'])
     time.sleep(1)
-    with open('tmp.png', 'rb') as photo :
+    with open('tmp.png', 'rb') as photo:
         update.message.reply_photo(photo=photo)
     os.remove('tmp.png')
 
@@ -274,7 +261,8 @@ def load_test_2(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Test data 2 loaded')
 
 
-def main() :
+def main():
+    """Call main application."""
     updater = Updater(token='5337419761:AAFahgNMGQNpzyRvFFlS3_N_-9DyfNB5bfQ', use_context=True)
     dispatcher = updater.dispatcher
 
@@ -295,5 +283,6 @@ def main() :
     updater.start_polling()
     updater.idle()
 
-if __name__ == '__main__' :
+
+if __name__ == '__main__':
     main()
