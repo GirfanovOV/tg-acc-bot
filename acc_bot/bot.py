@@ -37,6 +37,8 @@ from acc_bot.util import (
 )
 from acc_bot.test_data import load_test_data_1, load_test_data_2
 
+_ = lambda x : x
+
 gettext.install("bot", os.path.dirname(__file__), names=("ngettext",))
 
 # translation = gettext.translation('bot', 'acc_bot/po/')

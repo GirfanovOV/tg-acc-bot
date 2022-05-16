@@ -1,31 +1,34 @@
 """Module implements a number of tools used all across the project."""
 
+
 import datetime
 import subprocess
 import numpy as np
 # import matplotlib.pyplot as plt
 # import seaborn as sns
 
+
 def accumulate_by_span(data: dict, span: datetime.timedelta) -> list:
     """Gater data(spendings) grouped by aforementioned time span."""
     res = []
-    date_initial= datetime.datetime.now()
+    date_initial = datetime.datetime.now()
     tmp = sorted(data.items(), key=lambda x: x[0])
-    for item in reversed(tmp):
-        while date_initial> item[0] :
+    for item in reversed(tmp) :
+        while date_initial > item[0] :
             res.append(0)
-            date_initial-= span
+            date_initial -= span
         res[-1] += item[1][1]
 
     return res[::-1]
 
+
 def gater_week(data: dict) -> dict[str, int]:
     """Gater categorial data(spendings) for the last week."""
-    date_initial= datetime.datetime.now() - datetime.timedelta(days=7)
+    date_initial = datetime.datetime.now() - datetime.timedelta(days=7)
     week_spendings = {}
-    for key, val in data.items():
-        if key >= date_initial:
-            if val[0] not in week_spendings:
+    for key, val in data.items() :
+        if key >= date_initial :
+            if val[0] not in week_spendings :
                 week_spendings[val[0]] = 0
             week_spendings[val[0]] += val[1]
     return week_spendings
