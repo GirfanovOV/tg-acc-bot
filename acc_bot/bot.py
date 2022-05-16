@@ -37,9 +37,11 @@ from acc_bot.util import (
 )
 from acc_bot.test_data import load_test_data_1, load_test_data_2
 
-translation = gettext.translation('bot', 'acc_bot/po/')
-_ = translation.gettext
-ngettext = translation.ngettext
+gettext.install("bot", os.path.dirname(__file__), names=("ngettext",))
+
+# translation = gettext.translation('bot', 'acc_bot/po/')
+# _ = translation.gettext
+# ngettext = translation.ngettext
 # try :
 #     translation = gettext.translation('bot', 'acc_bot/')
 #     _ = translation.gettext

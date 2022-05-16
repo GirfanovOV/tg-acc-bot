@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-16 12:14+0300\n"
+"POT-Creation-Date: 2022-05-16 12:49+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,109 +17,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.1\n"
 
-#: acc_bot/bot.py:53 acc_bot/bot.py:58 acc_bot/test_data.py:22
+#: acc_bot/bot.py:55 acc_bot/bot.py:60 acc_bot/test_data.py:22
 msgid "restaurants"
 msgstr ""
 
-#: acc_bot/bot.py:53 acc_bot/bot.py:58 acc_bot/test_data.py:22
+#: acc_bot/bot.py:55 acc_bot/bot.py:60 acc_bot/test_data.py:22
 msgid "transport"
 msgstr ""
 
-#: acc_bot/bot.py:54 acc_bot/bot.py:58 acc_bot/test_data.py:22
+#: acc_bot/bot.py:56 acc_bot/bot.py:60 acc_bot/test_data.py:22
 msgid "supermarkets"
 msgstr ""
 
-#: acc_bot/bot.py:54 acc_bot/bot.py:59 acc_bot/test_data.py:23
+#: acc_bot/bot.py:56 acc_bot/bot.py:61 acc_bot/test_data.py:23
 msgid "pharmacy"
 msgstr ""
 
-#: acc_bot/bot.py:55 acc_bot/bot.py:59 acc_bot/test_data.py:23
+#: acc_bot/bot.py:57 acc_bot/bot.py:61 acc_bot/test_data.py:23
 msgid "entertainment"
 msgstr ""
 
-#: acc_bot/bot.py:55 acc_bot/bot.py:59 acc_bot/test_data.py:23
+#: acc_bot/bot.py:57 acc_bot/bot.py:61 acc_bot/test_data.py:23
 msgid "other"
 msgstr ""
 
-#: acc_bot/bot.py:64
+#: acc_bot/bot.py:66
 msgid "Sorry, I dont understand."
 msgstr ""
 
-#: acc_bot/bot.py:65
+#: acc_bot/bot.py:67
 msgid "I dont understand🧐"
 msgstr ""
 
-#: acc_bot/bot.py:66
+#: acc_bot/bot.py:68
 msgid "I dont understand!🤬"
 msgstr ""
 
-#: acc_bot/bot.py:67
+#: acc_bot/bot.py:69
 msgid "STOP!✋"
 msgstr ""
 
-#: acc_bot/bot.py:85
+#: acc_bot/bot.py:87
 msgid ""
 "Hey! Im an accountant bot.\n"
 "Ill help u managing ur finances!"
 msgstr ""
 
-#: acc_bot/bot.py:92
+#: acc_bot/bot.py:94
 msgid "Unknown cmd 🥵"
 msgstr ""
 
-#: acc_bot/bot.py:107 acc_bot/bot.py:136 acc_bot/bot.py:161
+#: acc_bot/bot.py:109 acc_bot/bot.py:138 acc_bot/bot.py:163
 msgid "Wrong input"
 msgstr ""
 
-#: acc_bot/bot.py:116 acc_bot/bot.py:126
+#: acc_bot/bot.py:118 acc_bot/bot.py:128
 msgid "Please, choose category:"
 msgstr ""
 
-#: acc_bot/bot.py:144
+#: acc_bot/bot.py:146
 msgid "Type new limit"
 msgstr ""
 
-#: acc_bot/bot.py:147
+#: acc_bot/bot.py:149
 msgid "Type the amount spent"
 msgstr ""
 
-#: acc_bot/bot.py:173
+#: acc_bot/bot.py:175
 msgid "Category {} was updated!"
-msgstr ""
-
-#: acc_bot/bot.py:178
-msgid ""
-"\n"
-"Youve exceeded your weekly limit for the category {} 😱"
 msgstr ""
 
 #: acc_bot/bot.py:180
 msgid ""
 "\n"
+"Youve exceeded your weekly limit for the category {} 😱"
+msgstr ""
+
+#: acc_bot/bot.py:182
+msgid ""
+"\n"
 "Youve already spent {} of you limit {} for this week"
 msgstr ""
 
-#: acc_bot/bot.py:185
+#: acc_bot/bot.py:187
 msgid "Limit for {} category was updated!"
 msgstr ""
 
-#: acc_bot/bot.py:196 acc_bot/bot.py:205 acc_bot/bot.py:222
+#: acc_bot/bot.py:198 acc_bot/bot.py:207 acc_bot/bot.py:224
 msgid "You havent spent any money this week 😢"
 msgstr ""
 
-#: acc_bot/bot.py:208
+#: acc_bot/bot.py:210
 msgid ""
 "Wow!🤩 Heres your top spenings of this week:\n"
 "\n"
 msgstr ""
 
-#: acc_bot/bot.py:211
+#: acc_bot/bot.py:213
 msgid ""
 "\n"
 "And the total is: {} moneys!💸"
 msgstr ""
 
-#: acc_bot/bot.py:213
+#: acc_bot/bot.py:215
 msgid ""
 "\n"
 "Only {} category present"
@@ -129,39 +129,39 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: acc_bot/bot.py:228
+#: acc_bot/bot.py:230
 msgid "Too few data 😔"
 msgstr ""
 
-#: acc_bot/bot.py:231
+#: acc_bot/bot.py:233
 msgid ""
 "Your week totals:\n"
 "\n"
 msgstr ""
 
-#: acc_bot/bot.py:235
+#: acc_bot/bot.py:237
 msgid ""
 "\n"
 "By the way, we predict you to spend {} next week!"
 msgstr ""
 
-#: acc_bot/bot.py:251
+#: acc_bot/bot.py:253
 msgid "This is a help message\n"
 msgstr ""
 
-#: acc_bot/bot.py:252
+#: acc_bot/bot.py:254
 msgid "/add - add spending for specific category.\n"
 msgstr ""
 
-#: acc_bot/bot.py:253
+#: acc_bot/bot.py:255
 msgid "/set_limit - set the limit for the category.\n"
 msgstr ""
 
-#: acc_bot/bot.py:254
+#: acc_bot/bot.py:256
 msgid "/week show stats for the last week.\n"
 msgstr ""
 
-#: acc_bot/bot.py:255
+#: acc_bot/bot.py:257
 msgid "/weeks show accumulated stats for the whole history."
 msgstr ""
 

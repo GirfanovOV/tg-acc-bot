@@ -44,6 +44,7 @@ def task_po():
             'actions': ['pybabel update -D bot -d acc_bot/po -i acc_bot/po/bot.pot'],
             'file_dep': ['acc_bot/po/bot.pot'],
             'targets': ['acc_bot/po/ru/LC_MESSAGES/bot.po'],
+            'task_dep' : ['pot']
            }
 
 
@@ -52,12 +53,13 @@ def task_mo():
     return {
             'actions': [
                 (create_folder, ['acc_bot/ru/LC_MESSAGES']),
-                'pybabel compile -D bot -l ru -i acc_bot/po/ru/LC_MESSAGES/bot.po -d acc_bot/po',
+                'pybabel compile -D bot -l ru -i acc_bot/po/ru/LC_MESSAGES/bot.po -d acc_bot',
                 (create_folder, ['acc_bot/en/LC_MESSAGES']),
-                'pybabel compile -D bot -l en -i acc_bot/po/en/LC_MESSAGES/bot.po -d acc_bot/po',
+                'pybabel compile -D bot -l en -i acc_bot/po/en/LC_MESSAGES/bot.po -d acc_bot',
                        ],
             'file_dep': ['acc_bot/po/ru/LC_MESSAGES/bot.po'],
-            'targets': ['acc_bot/po/ru/LC_MESSAGES/bot.mo', 'acc_bot/po/en/LC_MESSAGES/bot.mo'],
+            'targets': ['acc_bot/ru/LC_MESSAGES/bot.mo', 'acc_bot/en/LC_MESSAGES/bot.mo'],
+            'task_dep' : ['po']
            }
 
 

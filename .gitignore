@@ -18,3 +18,4 @@ acc_bot/ru
 acc_bot/en
 *.mo
 *.pot
+build
