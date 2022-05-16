@@ -3,3 +3,6 @@ recursive-include acc_bot/docs *
 include *.md
 include .flake8
 include .pylintrc
+include test_util.py
+include Pipfile 
+include dodo.py

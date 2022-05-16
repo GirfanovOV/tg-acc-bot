@@ -53,7 +53,7 @@ Testing of functional elements:
     - ``doit test`` - to run the test module.
     - ``doit coverage`` - to generate test coverage.
 
-Assembly :
+Building :
 
  - ``doit html`` - build sphinx documentation.
  - ``doit check`` - check pydocstyle, flake8 and tests.

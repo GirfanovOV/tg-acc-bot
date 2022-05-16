@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-16 15:03+0300\n"
+"POT-Creation-Date: 2022-05-16 15:58+0300\n"
 "PO-Revision-Date: 2022-05-15 13:36+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,47 +19,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.1\n"
 
-#: acc_bot/bot.py:43 acc_bot/bot.py:48 acc_bot/test_data.py:16
+#: acc_bot/bot.py:44 acc_bot/bot.py:49 acc_bot/test_data.py:16
 msgid "restaurants"
 msgstr "рестораны"
 
-#: acc_bot/bot.py:43 acc_bot/bot.py:48 acc_bot/test_data.py:16
+#: acc_bot/bot.py:44 acc_bot/bot.py:49 acc_bot/test_data.py:16
 msgid "transport"
 msgstr "транспорт"
 
-#: acc_bot/bot.py:44 acc_bot/bot.py:48 acc_bot/test_data.py:16
+#: acc_bot/bot.py:45 acc_bot/bot.py:49 acc_bot/test_data.py:16
 msgid "supermarkets"
 msgstr "супермаркеты"
 
-#: acc_bot/bot.py:44 acc_bot/bot.py:49 acc_bot/test_data.py:17
+#: acc_bot/bot.py:45 acc_bot/bot.py:50 acc_bot/test_data.py:17
 msgid "pharmacy"
 msgstr "аптеки"
 
-#: acc_bot/bot.py:45 acc_bot/bot.py:49 acc_bot/test_data.py:17
+#: acc_bot/bot.py:46 acc_bot/bot.py:50 acc_bot/test_data.py:17
 msgid "entertainment"
 msgstr "развлечения"
 
-#: acc_bot/bot.py:45 acc_bot/bot.py:49 acc_bot/test_data.py:17
+#: acc_bot/bot.py:46 acc_bot/bot.py:50 acc_bot/test_data.py:17
 msgid "other"
 msgstr "другое"
 
-#: acc_bot/bot.py:54
+#: acc_bot/bot.py:55
 msgid "Sorry, I dont understand."
 msgstr "Извините, я не понимаю."
 
-#: acc_bot/bot.py:55
+#: acc_bot/bot.py:56
 msgid "I dont understand🧐"
 msgstr "Я не понимаю🧐"
 
-#: acc_bot/bot.py:56
+#: acc_bot/bot.py:57
 msgid "I dont understand!🤬"
 msgstr "Я не понимаю!🤬"
 
-#: acc_bot/bot.py:57
+#: acc_bot/bot.py:58
 msgid "STOP!✋"
 msgstr "ХВАТИТ!✋"
 
-#: acc_bot/bot.py:75
+#: acc_bot/bot.py:76
 msgid ""
 "Hey! Im an accountant bot.\n"
 "Ill help u managing ur finances!"
@@ -67,31 +67,31 @@ msgstr ""
 "Привет! Я бот-бухгалтер.\n"
 "Я помогаю следить за финансами!"
 
-#: acc_bot/bot.py:82
+#: acc_bot/bot.py:83
 msgid "Unknown cmd 🥵"
 msgstr "Неизвестная команда"
 
-#: acc_bot/bot.py:97 acc_bot/bot.py:126 acc_bot/bot.py:151
+#: acc_bot/bot.py:98 acc_bot/bot.py:127 acc_bot/bot.py:152
 msgid "Wrong input"
 msgstr "Неверный ввод"
 
-#: acc_bot/bot.py:106 acc_bot/bot.py:116
+#: acc_bot/bot.py:107 acc_bot/bot.py:117
 msgid "Please, choose category:"
 msgstr "Пожалуйста выберете категорию"
 
-#: acc_bot/bot.py:134
+#: acc_bot/bot.py:135
 msgid "Type new limit"
 msgstr "Введите новый лимит"
 
-#: acc_bot/bot.py:137
+#: acc_bot/bot.py:138
 msgid "Type the amount spent"
 msgstr "Введите, сколько потрачено"
 
-#: acc_bot/bot.py:163
+#: acc_bot/bot.py:164
 msgid "Category {} was updated!"
 msgstr "Категория {} обновлена!"
 
-#: acc_bot/bot.py:168
+#: acc_bot/bot.py:169
 msgid ""
 "\n"
 "Youve exceeded your weekly limit for the category {} 😱"
@@ -99,7 +99,7 @@ msgstr ""
 "\n"
 "Вы привысили ваш месячный предел для категории {} 😱"
 
-#: acc_bot/bot.py:170
+#: acc_bot/bot.py:171
 msgid ""
 "\n"
 "Youve already spent {} of you limit {} for this week"
@@ -107,15 +107,15 @@ msgstr ""
 "\n"
 "Вы уже потратили {} из вашего лимита {} на этой неделе"
 
-#: acc_bot/bot.py:175
+#: acc_bot/bot.py:176
 msgid "Limit for {} category was updated!"
 msgstr "Лимит для {} категории был обновлен!"
 
-#: acc_bot/bot.py:186 acc_bot/bot.py:195 acc_bot/bot.py:212
+#: acc_bot/bot.py:187 acc_bot/bot.py:196 acc_bot/bot.py:213
 msgid "You havent spent any money this week 😢"
 msgstr "Вы еще не тратили деньги на этой неделе 😢"
 
-#: acc_bot/bot.py:198
+#: acc_bot/bot.py:199
 msgid ""
 "Wow!🤩 Heres your top spenings of this week:\n"
 "\n"
@@ -123,7 +123,7 @@ msgstr ""
 "Вау!🤩 Вот ваши траты за эту неделю:\n"
 "\n"
 
-#: acc_bot/bot.py:201
+#: acc_bot/bot.py:202
 msgid ""
 "\n"
 "And the total is: {} moneys!💸"
@@ -131,7 +131,7 @@ msgstr ""
 "\n"
 "И всего : {} денег!💸"
 
-#: acc_bot/bot.py:203
+#: acc_bot/bot.py:204
 msgid ""
 "\n"
 "Only {} category present"
@@ -148,11 +148,11 @@ msgstr[2] ""
 "\n"
 "{} категорий! "
 
-#: acc_bot/bot.py:218
+#: acc_bot/bot.py:219
 msgid "Too few data 😔"
 msgstr "Слишком мало данных 😔"
 
-#: acc_bot/bot.py:221
+#: acc_bot/bot.py:222
 msgid ""
 "Your week totals:\n"
 "\n"
@@ -160,7 +160,7 @@ msgstr ""
 "Ваши понедельные траты:\n"
 "\n"
 
-#: acc_bot/bot.py:225
+#: acc_bot/bot.py:226
 msgid ""
 "\n"
 "By the way, we predict you to spend {} next week!"
@@ -188,13 +188,13 @@ msgstr "/week - проказать статистику по последней 
 msgid "/weeks show accumulated stats for the whole history."
 msgstr "/weeks - показать статистику по всем неделям в истории."
 
-#: acc_bot/bot.py:269
+#: acc_bot/bot.py:268
 msgid "Please, provide telegram-bot token or left blank to use default:\n"
 msgstr ""
 "Пожалуйста, укажите токен бота или оставьте поле пустым чтобы "
 "использовать значение по умолчанию:\n"
 
-#: acc_bot/bot.py:273
+#: acc_bot/bot.py:272
 msgid "The bot is ready!"
 msgstr "Бот готов к работе!"
 
